@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<title>BZs Webpage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h1 class="w3-padding-30" style="font-size:100px;padding-left:.5em;">BZ</h1>
+    <hr>
+    <h3 class=""><b><br>Web Developer</b></h3>
+    <br>
+    <br>
+    <br>
+
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Projects</a>
+    <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Skills</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo" style=""><b>Richard Beese</b></h1>
+    <h1 class="w3-xxxlarge w3-text-black"><b>Projects</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+  </div>
+
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <div class="" style="height:35em">
+        <img src="sources/images/startupWeek.png" style="width:400px;height:300px" onclick="onClick(this)" alt="Outline of a lab beaker and words startup week" name="During the Fort Collins Startup Weekend, our team delivered the winning project. It is an app that allows users to select their perfect venue, based on availability.">
+        <h6>1st Place @ Fort Collins Startup Weekend</h6>
+        <a href="#">Perfect Venue</a>
+        <h6>Technologies used:</h6>
+        <h6><em>HTML5, CSS3</em></h6>
+      </div>
+      <div class="" style="height:35em">
+        <img src="sources/images/awtrs.png" style="width:400px;height:400px" onclick="onClick(this)" alt="Outline of two otters and words AWTR" name="The AWTR app allows users (called otters) to maximize their vacation experience by allowing them to form groups of otters (called romps) and allow those group members to coordinate their travel itineraries, thus eliminating scheduling conflicts.">
+        <br>
+        <a href="#">AWTR</a>
+        <h6>Technologies used:</h6>
+        <h6><em>CSS3, HTML5, Node.js, AJAX, Express, Git/Github, Knex, PostgreSQL, Postman, JavaScript, jQuery, Materialize, Firebase, API, bCrypt</em></h6>
+      </div>
+      <div class="" style="height:35em">
+        <img src="sources/images/freebees.png" style="width:100%" onclick="onClick(this)" alt="Image of FreeBees written over honey comb" name="This phone app allows users to get free items from bars, restaurants, and other stores based on location.">
+        <br>
+        <a href="#">Title</a>
+        <h6>Technologies used:</h6>
+        <h6><em>Ionic 2, Angular, Cordova, TypeScript</em></h6>
+      </div>
+    </div>
+
+    <div class="w3-half">
+      <div class="" style="height:35em">
+        <img src="sources/images/myAvengers.png" style="width:100%" onclick="onClick(this)" alt="Words My Avengers Choose Your Own Heroes" name="This app allows users to fix the errors of writers in creating an Avengers team that isn't perfect. The user can choose seven heroes to fill their perfect Avengers team and the app will go to Marvel's API and load the seven images in a team profile.">
+        <br>
+        <a href="https://newavengers-d6da6.firebaseapp.com/">New Avengers</a>
+        <h6>Technologies used:</h6>
+        <h6><em>CSS3, HTML5, JavaScript, AJAX, API, bCrypt, Firebase, Git/Github, jQuery, JSON, Postman</em></h6>
+      </div>
+      <div class="" style="height:35em">
+        <img src="sources/images/hailYa.png" style="width:100%;padding-top:3em" onclick="onClick(this)" alt="Words Hail Ya! with a bucket" name="This app allows users to use the present or future weather as an ingredient in a drink.">
+        <h6>Hack the Planet</h6>
+        <a href="https://d1g32dfiwtj6yh.cloudfront.net/">Hail Ya!</a>
+        <br>
+        <h6>Technologies used:</h6>
+        <h6><em>CSS3, HTML5, JavaScript, AJAX, API, AWS, Git/Github, jQuery, JSON, Postman, Illustrator</em></h6>
+      </div>
+      <div class="" style="height:35em">
+        <img src="sources/images/schmeezeeHGVC.jpg" style="width:100%" onclick="onClick(this)" alt="Picture of SchmeezeeHGVC web site with a picture of Italy's Venice" name="This web app allows users to keep notes on all the great places that they go within HGVC.">
+        <br>
+        <a href="#">Schmeezee HGVC</a>
+        <h6>Technologies used:</h6>
+        <h6><em>WordPress</em></h6>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div class="w3-container" id="skills" style="margin-top:75px">
+
+    <h1 class="w3-xxxlarge w3-text-black"><b>Skills</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <div class="" style="width:30%;float:left">
+    <h4><b>Technologies</b></h4>
+    <hr>
+    <ul>
+      <li>JavaScript</li>
+      <li>jQuery</li>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>AngularJS</li>
+      <li>Angular</li>
+      <li>Knex.js</li>
+      <li>PostgreSQL</li>
+      <li>MySQL</li>
+      <li>Node.js</li>
+      <li>C#</li>
+      <li>ASP .NET</li>
+      <li>Sass</li>
+      <li>Ionic 2</li>
+      <li>Express</li>
+      <li>TypeScript</li>
+      <li>Cordova</li>
+      <li>WordPress</li>
+    </ul>
+  </div>
+  <div class="w3-container" style="width:30%;float:left">
+    <h4><b>Tools</b></h4>
+    <hr>
+    <ul>
+      <li>Git/Github</li>
+      <li>Photoshop</li>
+      <li>Postman</li>
+      <li>InDesign</li>
+      <li>Pivotal Tracker</li>
+      <li>AWS</li>
+      <li>Heroku</li>
+      <li>Firebase</li>
+      <li>508 Checker</li>
+      <li>Accessibility Checker</li>
+      <li>CLI</li>
+      <li>ERD</li>
+      <li>Visual Studios</li>
+      <li>ATOM</li>
+    </ul>
+  </div>
+  <div class="w3-container" style="width:30%;float:left">
+    <h4><b>Techniques</b></h4>
+    <hr>
+    <ul>
+      <li>Responsive Design</li>
+      <li>OOP</li>
+      <li>Agile Methodology</li>
+      <li>TDD</li>
+      <li>Pair Programming</li>
+      <li>508 Compliance</li>
+      <li>Version Control</li>
+      <li>API Intergration</li>
+    </ul>
+  </div>
+</div>
+
+  <!-- About -->
+  <div class="w3-container" id="about" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>About</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <p>I am a software developer who was born with a love for problem-solving.  As a boy living in Hawaii, I loved puzzles, riddles, and brain teasers.  As I grew older, I became a paperboy and I applied my problem-solving skills to modify the new customer compensation package to sign up many first time customers, which got me second place in the paperboy of the year competition</p>
+    <hr>
+    <p>In my twenties and thirties I worked at UPS, where I learned the value of hard work and working in a team.  I also used my problem solving skills to satisfy the many different needs of my customers based on our single product.  When I moved to the mainland, I became the owner of a trucking and delivery company as a contractor for FedEx.  Being a business owner, I really got to flex my problem-solving muscles.  One of my biggest 'wins' was in addressing my need for seasonal drivers.  I hired three firefighters on differing schedules and combined them into one full time driver position.  It was a technique that was duplicated by other contractors the following year.</p>
+    <hr>
+    <p>Four years ago, my wife was hired into a faculty position at CSU in Fort Collins, CO.  Upon moving there, I decided on a career change.  I got my BS in IT from CSU, graduated from Galvanize's 6-month full stack immersive program, and finished a 6-week Java/Spring class.</p>
+    <hr>
+    <p>Now I'm taking all my old skills and combining them with all my new skills to create business solutions that are based around programming solutions.  I love creating new and innovative solutions that help solve problems and make people's lives better.</p>
+    <hr>
+    <p>So far I've taken those skills and embarked on a few new adventures.  During the Fort Collins Startup Startup Weekend at CSU, I was part of the team that won first place, by creating a viable business solution to the problem presented to us.  Later in the year, I was a speaker at the Loveland Startup Weekend and presented a talk called 'Web Development for the Absolute Beginner'.  I'm currently working on a side project, with a CSU Doctoral Candidate, to try and create assistive technology to assist people with social-emotional agnosia. </p>
+  </div>
+
+
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <p>Thanks for visiting my web page.  Please come back again soon.  In the meantime, if you want to contact me, my contact information is below.</p>
+    <hr>
+    <div class="" style="">
+      <img style="height:20px;width:20px;float:left" src="sources/images/iconmonstr-email-1-240.png" alt="">
+      <p style="padding-left:50px">bzhawaiibz@gmail.com</p>
+    </div>
+    <hr>
+    <div class="">
+      <img style="height:20px;width:20px;float:left" src="sources/images/In-Black-101px-TM.png" alt="">
+      <p style="padding-left:50px">www.linkedin.com/in/bzhawaii</p>
+    </div>
+    <hr>
+    <div class="">
+      <img style="height:20px;width:20px;float:left" src="sources/images/iconmonstr-smartphone-4-240.png" alt="">
+      <p style="padding-left:50px">(970)889-0740</p>
+    </div>
+    <hr>
+    <div class="">
+      <img style="height:20px;width:20px;float:left" src="sources/images/githubPro.png" alt="">
+      <p style="padding-left:50px">www.github.com/BZhawaii</p>
+    </div>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Web page by <a href="#" title="W3.CSS" target="_blank" class="w3-hover-opacity">Richard Beese</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.name;
+}
+</script>
+
+</body>
+</html>
